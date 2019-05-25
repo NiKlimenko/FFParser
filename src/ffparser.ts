@@ -53,8 +53,7 @@ export class FFParser {
         const args = [
             '-i', this.inputPath,
             '-f', 'image2pipe',
-            '-q:v', this.quality.toString(),
-            '-s', '1920x1080'
+            '-q:v', this.quality.toString()
         ];
 
         if (this.frameRate) {

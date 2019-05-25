@@ -1,4 +1,4 @@
-import {FFParser} from './ffparser'
+import {FFParser} from '../src'
 import {writeFile} from 'fs';
 
 new FFParser('rtsp://184.72.239.149/vod/mp4:BigBuckBunny_115k.mov')

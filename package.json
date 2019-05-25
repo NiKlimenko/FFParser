@@ -1,19 +1,23 @@
 {
   "name": "ffparser",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "FFMPEG frame parser",
   "main": "index.js",
   "scripts": {
+    "pack": "npm run build && cp package.json build/src && npm pack build/src/",
+    "build": "npm run clean && npm run tsc",
+    "clean": "rm -rf build",
     "tsc": "tsc"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NiKlimenko/FFParser.git"
+    "url": "https://github.com/NiKlimenko/FFParser.git"
   },
   "keywords": [
     "FFMPEG",
     "frame",
-    "buffer"
+    "buffer",
+    "NodeJS"
   ],
   "author": "Nikita Klimenko",
   "license": "MIT",
