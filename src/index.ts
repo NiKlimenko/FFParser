@@ -1,1 +1,3 @@
-export * from './ffparser'
+import {FFParser} from './ffparser';
+
+module.exports = FFParser;
